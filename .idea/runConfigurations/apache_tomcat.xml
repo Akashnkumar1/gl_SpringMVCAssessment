@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="apache-tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 11.0.0-M5" ALTERNATIVE_JRE_ENABLED="false">
-    <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/spring_mvc_war" />
+  <configuration default="false" name="apache-tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 11.0.0-M5" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="20">
+    <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/spring-mvc-war" />
     <option name="UPDATING_POLICY" value="restart-server" />
     <deployment>
       <artifact name="spring-mvc:war">
@@ -15,9 +15,9 @@
     </server-settings>
     <log_file alias="Tomcat Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/manager.*" />
     <log_file alias="Tomcat Host Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/host-manager.*" />
-    <log_file alias="Tomcat Localhost Access Log" path="%IDEA_RUN:CATALINA_BASE%/logs/localhost_access_log.*" />
-    <predefined_log_file enabled="true" id="Tomcat" />
-    <predefined_log_file enabled="true" id="Tomcat Catalina" />
+    <log_file checked="false" alias="Tomcat Localhost Access Log" path="%IDEA_RUN:CATALINA_BASE%/logs/localhost_access_log.*" />
+    <log_file checked="false" alias="Tomcat Localhost Log" path="%IDEA_RUN:CATALINA_BASE%/logs/localhost.*" />
+    <log_file checked="false" alias="Tomcat Catalina Log" path="%IDEA_RUN:CATALINA_BASE%/logs/catalina.*" />
     <RunnerSettings RunnerId="Debug">
       <option name="DEBUG_PORT" value="55013" />
     </RunnerSettings>
@@ -83,10 +83,6 @@
     </ConfigurationWrapper>
     <method v="2">
       <option name="Make" enabled="true" />
-      <option name="BuildArtifacts" enabled="true">
-        <artifact name="spring-mvc:war" />
-        <artifact name="spring-mvc:war exploded" />
-      </option>
     </method>
   </configuration>
 </component>

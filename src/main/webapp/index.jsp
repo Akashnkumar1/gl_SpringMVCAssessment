@@ -37,30 +37,26 @@ p {
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-gradient">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="index.jsp">Book Of Magic</a>
-			<button class="navbar-toggler" type="button"
-				data-bs-toggle="collapse" data-bs-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item"><a class="nav-link active"
-						aria-current="page" href="index.jsp">Home</a></li>
-					<li class="nav-item"><a class="nav-link active" href="login">Login</a>
-					</li>
-					<li class="nav-item"><a class="nav-link active" href="register">Register</a>
-					</li>
-					<li style="margin-left: 155vh;" class="nav-item"><a
-						class="nav-link active" style="font-weight: bolder" href="homepage"><i class="fa fa-book"></i>&nbsp; Books</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+	<a class="navbar-brand" href="#">Magic Of Books</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="WEB-INF/views/login.jsp">Login</a>
+		git 	</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="WEB-INF/views/register.jsp">Register</a>
+			</li>
+		</ul>
+	</div>
+</nav>
 	<div style="text-align: center;">
 		<img src="resources/images/img.png" style="max-width: max-content;">
 	</div>
